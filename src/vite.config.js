@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { globSync }  from 'glob';
+import stylelint from 'vite-plugin-stylelint';
 
 export default defineConfig({
     server: {
@@ -12,6 +13,11 @@ export default defineConfig({
                 ignore: '**/*.test.js',
             }),
             refresh: true,
+        }),
+        stylelint({
+            emitWarningAsError: true,
+            include: ['resources/**/*.scss'],
+            exclude: ['resources/scss/third-party/**/*.scss'],
         }),
         {
             name: 'blade',

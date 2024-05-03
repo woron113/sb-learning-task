@@ -15,7 +15,7 @@
 make build
 ```
 
-3. Npm packagek telepitése
+3. Npm packagek telepítése
 ```makefile
 make npm-install
 ```
@@ -38,14 +38,14 @@ A tervet az alábbi oldalon érheted el figmában:
 
 ## Feladat leírása
 
-A terv alapján építsük meg az oldalt laravel keretrendszerben. Kontrollerek modellek nem szükségesek. Az adatokat statuksan tárolhatjuk. Javascripptet nem kell írni (esetleg a mobil menü nyitogatására de azt is meg lehet oldan css-ből). A lényeg hogy ha kell js fel legyen készítvea build, de ha akarod alapozókat megoldhatod css-ben.
+A terv alapján építsük meg az oldalt laravel keretrendszerben. Kontrollerek, modellek nem szükségesek. Az adatokat statikusan tárolhatjuk. Javascriptet nem kell írni (esetleg a mobil menü nyitogatására, de azt is meg lehet oldan css-ből). A lényeg hogy ha kell js, fel legyen készítve a build, de ha akarod a lapozókat megoldhatod css-ben.
 
 
 ### Stíluslapok kialakítása SCSS és BEM segítségével
 
 #### Alap SCSS fájl létrehozása
 
-Hozzunk létre egy alap SCSS fájlokat a projekt számára, amelyben változókat használunk a színek, betűtípusok és méretek egyszerűbb kezelésére. Az alábbi fájl strúktúra található a projektben. Példákkal a fájlok létrehozásával.
+Hozzunk létre egy alap SCSS fájlokat a projekt számára, amelyben változókat használunk a színek, betűtípusok, és méretek egyszerűbb kezelésére. Az alábbi fájl struktúra található a projektben. Példákkal a fájlok létrehozásával.
 ```
 scss/
 ├── config/    
@@ -88,7 +88,7 @@ scss/
 
 - Alkalmazzuk a BEM (Block Element Modifier) CSS módszert a stílusok strukturáltabb kialakításához.
 - A feladatot css keretrendszer nélkül kell megoldani
-- Figyelj hogy a tamogatottság a következő böngészö verziókig fedje le: Chrome 87, Safari 13.2, Firefox 91, Edge 97
+- Figyelj hogy a támogatottság a következő böngészö verziókig fedje le: Chrome 87, Safari 13.2, Firefox 91, Edge 97
 - Css grid és flex box layoutot legalább az egyik section-nél használj
 
 ### HTML és Laravel Blade
@@ -120,7 +120,7 @@ views/
 - Használjunk blade direktívákat a Laravel Blade templating segítségével.
 - jobb keresőoptimalizálás és felhasználói élmény érdekében használjunk szemantikus HTML elemeket.
 - Használhatsz Class-based komponenseket, de View-based komponenseket mindenképpen használj.
-- Top book blockban hasznlj html5 micro adatokat seo.
+- Top book blockban használj html5 micro adatokat.
 
 ### Webhasználhatóság
 

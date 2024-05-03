@@ -1,0 +1,29 @@
+{
+    "plugins": ["stylelint-scss", "stylelint-prettier"],
+    "ignoreFiles": [
+        "**/*.php",
+        "**/*.js",
+        "./resources/scss/third-party/**/*.scss",
+        "./resources/scss/base/**/*.scss"
+    ],
+    "rules": {
+        "prettier/prettier": true,
+        "declaration-no-important": true,
+        "keyframe-declaration-no-important": true,
+        "color-named": "never",
+        "color-no-hex": true,
+        "unit-disallowed-list": [
+            "px"
+        ],
+        "selector-disallowed-list": [
+            "/^#/"
+        ],
+        "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+        "declaration-empty-line-before": "off",
+        "no-descending-specificity": "off",
+        "scss/at-extend-no-missing-placeholder": "off"
+    },
+    "print": {
+        "source": true
+    }
+}

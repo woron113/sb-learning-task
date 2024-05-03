@@ -17,3 +17,15 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+/coverage
+/public/css/*
+/public/js/*
+/public/images/*
+/public/build/*
+/public/fonts/*
+
+docker-compose.override.yml
+
+*.sh
+!generate-env.sh
