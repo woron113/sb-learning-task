@@ -8,7 +8,7 @@ up upd stop
 
 .DEFAULT_GOAL := help
 
-PHP_CONTAINER := sb-learning-project-php-1
+PHP_CONTAINER := sb-learning-task-php-1
 NODE_CONTAINER := node:latest
 NODE_VITE_PORT := 5173:5173
 

@@ -30,6 +30,11 @@ make npm-dev
 make help
 ```
 
+Ha InnoDB probléma merül fel ez a [cikk](https://askubuntu.com/questions/1427384/cant-start-mysql-after-upgrade) segít megoldani
+
+6. Készíts egy .env fájlt a .env.example -ből ha nem jön létre automatikusan
+
+
 ### Weboldal Design
 
 A tervet az alábbi oldalon érheted el figmában:
