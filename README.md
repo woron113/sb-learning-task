@@ -134,3 +134,46 @@ Néhány példa:
 - aria-hidden: Az elem láthatóságának beállítása, amely segíthet az elemek megjelenítésének vagy elrejtésének vezérlésében a felhasználók számára.
 
 2. A reszponzív elrendezés biztosítsd, hogy a weboldal jól működjön különböző eszközökön és képernyőméreteken.
+
+
+### Tanuláshoz anyagok
+
+## HTML
+
+- [HTML alapok](https://www.codecademy.com/learn/learn-html)
+- [HTML googletől](https://web.dev/learn/html/welcome)
+- [W3school](https://www.w3schools.com/html/)
+
+## Laravel blade
+
+- [Laravel blade használata](https://kinsta.com/blog/laravel-blade/)
+- [Laravel componensek](https://dev.to/jump24/laravel-blade-components-3hbh)
+
+## CSS
+
+### CSS
+- [w3scool](https://www.w3schools.com/css)
+- [codecomedy](https://www.codecademy.com/learn/learn-css)
+- [CSS googletől](https://web.dev/learn/css)
+- [CSS játék](https://flukeout.github.io/)
+
+### SCSS
+- [SCSS](https://www.codecademy.com/learn/learn-sass)
+
+### Flexbox
+- [Iteraktív Flexbox élő magyarázattal](https://scrimba.com/learn/flexbox)
+- [Flexbox játék](https://flexboxfroggy.com/)
+- [Interaktív leírás a flexboxhoz](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+- [Sima guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+### CSS grid
+- [Iteraktív Flexbox élő magyarázattal](https://scrimba.com/learn/cssgrid)
+- [Css grid játék](https://cssgridgarden.com/)
+- [Interaktív leírás a css gridhez](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
+- [Sima guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+## Web accessibility
+
+- [Aria és html googltől](https://web.dev/learn/accessibility/aria-html)
+- [aria-label-ról](https://www.aditus.io/aria/aria-label/)
+- [Az aria tagekről](https://prismic.io/blog/what-is-aria)
