@@ -12,27 +12,23 @@
 
 2. Környezet felépítése
 ```makefile
-make build
+make app-setup
 ```
 
-3. Npm packagek telepítése
-```makefile
-make npm-install
-```
-
-4. Vite futtatása
+3. Vite futtatása
 ```makefile
 make npm-dev
 ```
 
-5. Parancsok kilistázása (itt találhatod a konténerek leállítását és indítását)
+4. Parancsok kilistázása (itt találhatod a konténerek leállítását és indítását, kontérbe való belépést ha szükséges)
 ```makefile
 make help
 ```
+5. A app-ot a böngészőben a http://localhost:8000 címen érhető el.
 
 Ha InnoDB probléma merül fel ez a [cikk](https://askubuntu.com/questions/1427384/cant-start-mysql-after-upgrade) segít megoldani
 
-6. Készíts egy .env fájlt a .env.example -ből ha nem jön létre automatikusan
+Készíts egy .env fájlt a .env.example -ből ha nem jön létre automatikusan
 
 
 ### Weboldal Design

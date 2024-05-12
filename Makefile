@@ -4,7 +4,8 @@ artisan-key \
 composer-install config \
 install npm-install npm-run-dev \
 npm-watch shell tinker uninstall \
-up upd stop
+up upd stop env-setup app-setup  \
+migrate
 
 .DEFAULT_GOAL := help
 
@@ -27,19 +28,25 @@ help: ## * Show help (Default task)
 composer-install: ## Setup step #2: Run composer install
 	docker exec -it $(PHP_CONTAINER) composer install
 
-artisan-key: ## Setup step #3: Run composer install
+env-setup:  ## Setup step #3: create .env file from .env.example
+	cp src/.env.example src/.env
+
+artisan-key: ## Setup step #4: generate laravel application key
 	docker exec -it $(PHP_CONTAINER) php artisan key:generate
 
-npm-install: ## Setup step #4: Run npm install
+migrate:  ## Setup step #5: Run laravel database migration
+	docker exec -it $(PHP_CONTAINER) php artisan migrate
+
+npm-install: ## Setup step #6: Run npm install
 	$(NODE) npm install
 
-npm-dev: ## Setup step #5: Run npm run dev
+npm-dev: ## Setup step #7: Run npm run dev
 	$(NODE) npm run dev
 
 npm-build: ## Run npm run build
 	$(NODE) npm run build
 
-install: composer-install artisan-key npm-install npm-build  ## Run the setup steps automatically
+install: composer-install env-setup artisan-key migrate npm-install npm-build  ## Run the setup steps automatically
 
 uninstall: ## Cleanup project by removing .env, PHP packages, node modules, files under the storage directory, etc.
 	rm -f .env
@@ -50,6 +57,8 @@ uninstall: ## Cleanup project by removing .env, PHP packages, node modules, file
 	rm -rf node_modules
 	rm -rf coverage
 	rm -rf resources/json/*
+
+app-setup: build install ## Setup: build and install the project
 
 shell: ## Open bash as host user in the PHP container
 	docker exec -u $(USER_ID):$(GROUP_ID) -it $(PHP_CONTAINER) bash
