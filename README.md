@@ -70,16 +70,16 @@ scss/
 │   ├── _responsive.scss          // Mixins for responsive styles
 │
 ├── layouts/
-│   ├── grid.scss               // Layout specific style
-│   ├── header.scss
-│   ├── footer.scss    
+│   ├── _grid.scss               // Layout specific style
+│   ├── _header.scss
+│   ├── _footer.scss    
 │
 ├── components/
-│   ├── button.scss             // Component specific style
-│   ├── card.scss 
+│   ├── _button.scss             // Component specific style
+│   ├── _card.scss 
 │
 ├── pages/
-│   ├── Home.scss               // Pages and views
+│   ├── _home.scss               // Pages and views
 │
 ├── third-party/
 │
